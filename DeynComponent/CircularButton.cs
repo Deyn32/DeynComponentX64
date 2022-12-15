@@ -13,6 +13,7 @@ namespace DeynComponent
 			GraphicsPath graphicsPath = new GraphicsPath();
 			graphicsPath.AddEllipse(0, 0, base.ClientSize.Width, base.ClientSize.Height);
 			base.Region = new Region(graphicsPath);
+			graphicsPath.Dispose();
 			base.OnPaint(pevent);
 		}
 	}
